@@ -68,6 +68,41 @@
         .subscribe-button:hover {
             background-color: #004299;
         }
+
+        .auth-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .auth-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .auth-button img {
+            margin-right: 10px;
+        }
+
+        .auth-button.google { border-color: #dd4b39; }
+        .auth-button.facebook { border-color: #3b5998; }
+        .auth-button.github { border-color: #333; }
+
+        .auth-button.google:hover { background-color: #dd4b39; color: #fff; }
+        .auth-button.facebook:hover { background-color: #3b5998; color: #fff; }
+        .auth-button.github:hover { background-color: #333; color: #fff; }
     </style>
 </head>
 <body>
@@ -100,6 +135,18 @@
         </div>
 
         <a href="#" class="subscribe-button">Підписатися на новини</a>
+
+        <div class="auth-buttons">
+          <a href="#" class="auth-button google">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" width="20"> Увійти через Google
+          </a>
+          <a href="#" class="auth-button facebook">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="20"> Увійти через Facebook
+          </a>
+          <a href="#" class="auth-button github">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="20"> Увійти через GitHub
+          </a>
+      </div>
     </div>
 </body>
 </html>
